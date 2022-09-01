@@ -1,3 +1,8 @@
+:root {
+  --dark-purple: #7e22ce;
+  --light-purple: #e9d5ff;
+}
+
 .App {
     font-family: sans-serif;
     text-align: center;
@@ -33,6 +38,16 @@
   ul {
     list-style: none;
   }
+
+  footer {
+    background-color: var(--light-purple);
+    text-align: center;
+    padding: 1rem 0rem 0rem 1rem;
+  }
+
+  .footer-list {
+    padding-inline-start: 0px;
+  }
   
   li {
     border-radius: 0.5rem;
@@ -45,5 +60,17 @@
   #genre-title {
     font-size: large;
     font-weight: bold;
+  }
+
+  .social-media {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  .portfolio {
+    text-decoration: none;
+    color: var(--dark-purple);
+    font-size: 1.2rem;
   }
   

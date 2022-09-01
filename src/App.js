@@ -9,6 +9,10 @@ import ElectroFolk from "./Music/ElectroFolk.mp3";
 import PyarHua from "./Music/PyarHua.mp3";
 import JeenaYahan from "./Music/JeenaYahan.mp3";
 import EkAjnabee from "./Music/EkAjnabee.mp3";
+import github from "../src/icons8-github.svg";
+import linkedin from "../src/icons8-linkedin.svg";
+import twitter from "../src/icons8-twitter.svg";
+import telegram from "../src/icons8-telegram-app.svg";
 
 function App() {
   const [music, setMusic] = useState("Classical");
@@ -71,6 +75,7 @@ function App() {
   function showMusicRecommendation(event) {
     var recommendation = event.target.innerText;
     setMusic(recommendation);
+    
   }
   return (
     <div className="App">
@@ -102,6 +107,32 @@ function App() {
           })}
         </ul>
       </div>
+      <footer>
+        <p>© | 2022 | <a href="https://sudiptachakraborty.netlify.app/" class="portfolio">Sudipta
+                Chakraborty</a></p>
+        <ul class="footer-list">
+            <div class="social-media">
+                <a href="https://github.com/SudiptaChakraborty51" class="links">
+                    <img src={github} alt="pic not found"></img>
+                </a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/sudipta-chakraborty-4a371a212/" class="links">
+                    <img src={linkedin} alt="pic not found"></img>
+                </a>
+            </div>
+            <div class="social-media">
+                <a href="https://twitter.com/Sudipta41158180" class="links">
+                    <img src={twitter} alt="pic not found"></img>
+                </a>
+            </div>
+            <div class="social-media">
+                <a href="https://t.me/sudichakraborty" class="links">
+                    <img src={telegram} alt="pic not found"></img>
+                </a>
+            </div>
+        </ul>
+    </footer>
     </div>
   );
 }
