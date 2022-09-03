@@ -36,7 +36,7 @@ function App() {
     ],
     Folk: [
       {
-        title: "Baul- Bengal",
+        title: "Baul-Bengal",
         rating: 4.4,
         src: Baul
       },
@@ -84,6 +84,17 @@ function App() {
         <h1>🎶 Let's the music speak!</h1>
         <p>Checkout my favourite musics. Select a genre to get started.</p>
         {genreList.map((genre, index) => {
+          if(music === genre) {
+            return (
+              <button
+              className="btn-active"
+              key={index}
+              onClick={showMusicRecommendation}
+            >
+              {genre}
+            </button>
+            );
+          }
           return (
             <button
               className="btn"
